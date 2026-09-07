@@ -151,15 +151,19 @@ The project includes a Jira-ready backlog containing:
 The illustrative Scrum plan organizes backlog items across four delivery sprints:
 
 ### Sprint 1
+
 Request intake and workflow visibility
 
 ### Sprint 2
+
 Engineering review and delivery readiness
 
 ### Sprint 3
+
 Testing, traceability, and business acceptance
 
 ### Sprint 4
+
 Workflow controls and governance
 
 The Scrum plan also defines:
@@ -291,6 +295,7 @@ Readiness conditions
         ↓
 TS-05
 Prevent Development Without Acceptance Criteria
+```
 
 Test scenarios cover:
 
@@ -379,10 +384,20 @@ Software-Engineering-Process-Analysis/
 │   └── test-scenarios.md
 │
 └── README.md
-Project Scope & Limitations
+```
 
-This repository is a software engineering and business-process analysis case study designed to demonstrate requirements analysis, BPMN modelling, Agile delivery artifacts, testing traceability, and process-improvement methods.
+---
 
-The proposed future-state improvements represent designed process recommendations, not measured production outcomes.
+## Project Scope & Limitations
+
+This repository is a **software engineering and business-process analysis case study** designed to demonstrate requirements analysis, BPMN modelling, Agile delivery artifacts, testing traceability, and process-improvement methods.
+
+The proposed future-state improvements represent **designed process recommendations**, not measured production outcomes.
 
 No claims are made regarding production implementation, measured cycle-time reduction, cost savings, or operational performance improvements.
+
+---
+
+## Project Status
+
+✅ Complete

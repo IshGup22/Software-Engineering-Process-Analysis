@@ -1,0 +1,198 @@
+{
+  "summary": {
+    "business_requirements": 12,
+    "functional_requirements": 12,
+    "user_stories": 11,
+    "acceptance_criteria": 20,
+    "test_scenarios": 9,
+    "backlog_stories": 11,
+    "backlog_story_points": 55,
+    "test_referenced_business_requirements": 7,
+    "test_referenced_functional_requirements": 7,
+    "invalid_references": 0
+  },
+  "missing_or_invalid_references": [],
+  "test_references": {
+    "TS-01": {
+      "BR": [
+        "BR-01"
+      ],
+      "FR": [
+        "FR-01"
+      ],
+      "US": [
+        "US-01"
+      ],
+      "AC": [
+        "AC-01.1"
+      ]
+    },
+    "TS-02": {
+      "BR": [
+        "BR-02"
+      ],
+      "FR": [
+        "FR-02"
+      ],
+      "US": [
+        "US-01",
+        "US-02"
+      ],
+      "AC": [
+        "AC-01.2",
+        "AC-02.2"
+      ]
+    },
+    "TS-03": {
+      "BR": [
+        "BR-02"
+      ],
+      "FR": [
+        "FR-02"
+      ],
+      "US": [
+        "US-02"
+      ],
+      "AC": [
+        "AC-02.2"
+      ]
+    },
+    "TS-04": {
+      "BR": [
+        "BR-06"
+      ],
+      "FR": [
+        "FR-06"
+      ],
+      "US": [
+        "US-04"
+      ],
+      "AC": [
+        "AC-04.1"
+      ]
+    },
+    "TS-05": {
+      "BR": [
+        "BR-08"
+      ],
+      "FR": [
+        "FR-08"
+      ],
+      "US": [
+        "US-06"
+      ],
+      "AC": [
+        "AC-06.1"
+      ]
+    },
+    "TS-06": {
+      "BR": [
+        "BR-09"
+      ],
+      "FR": [
+        "FR-09"
+      ],
+      "US": [
+        "US-07",
+        "US-08"
+      ],
+      "AC": [
+        "AC-08.1"
+      ]
+    },
+    "TS-07": {
+      "BR": [
+        "BR-09"
+      ],
+      "FR": [
+        "FR-09"
+      ],
+      "US": [
+        "US-08"
+      ],
+      "AC": [
+        "AC-08.2"
+      ]
+    },
+    "TS-08": {
+      "BR": [
+        "BR-10"
+      ],
+      "FR": [
+        "FR-10"
+      ],
+      "US": [
+        "US-09"
+      ],
+      "AC": [
+        "AC-09.1"
+      ]
+    },
+    "TS-09": {
+      "BR": [
+        "BR-10",
+        "BR-12"
+      ],
+      "FR": [
+        "FR-12"
+      ],
+      "US": [
+        "US-11"
+      ],
+      "AC": [
+        "AC-11.2"
+      ]
+    }
+  },
+  "story_requirements": {
+    "US-01": [
+      "BR-01",
+      "FR-01"
+    ],
+    "US-02": [
+      "BR-02",
+      "FR-02"
+    ],
+    "US-03": [
+      "BR-03",
+      "BR-04",
+      "FR-03",
+      "FR-04"
+    ],
+    "US-04": [
+      "BR-06",
+      "FR-06"
+    ],
+    "US-05": [
+      "BR-07",
+      "FR-07"
+    ],
+    "US-06": [
+      "BR-08",
+      "FR-08"
+    ],
+    "US-07": [
+      "BR-05",
+      "BR-09",
+      "FR-05",
+      "FR-09"
+    ],
+    "US-08": [
+      "BR-09",
+      "FR-09"
+    ],
+    "US-09": [
+      "BR-10",
+      "FR-10"
+    ],
+    "US-10": [
+      "BR-05",
+      "BR-11",
+      "FR-11"
+    ],
+    "US-11": [
+      "BR-12",
+      "FR-12"
+    ]
+  }
+}

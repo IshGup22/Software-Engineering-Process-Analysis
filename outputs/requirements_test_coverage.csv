@@ -1,0 +1,25 @@
+requirement_id,test_scenarios,coverage_status
+BR-01,TS-01,Referenced
+BR-02,TS-02; TS-03,Referenced
+BR-03,,No explicit test reference
+BR-04,,No explicit test reference
+BR-05,,No explicit test reference
+BR-06,TS-04,Referenced
+BR-07,,No explicit test reference
+BR-08,TS-05,Referenced
+BR-09,TS-06; TS-07,Referenced
+BR-10,TS-08; TS-09,Referenced
+BR-11,,No explicit test reference
+BR-12,TS-09,Referenced
+FR-01,TS-01,Referenced
+FR-02,TS-02; TS-03,Referenced
+FR-03,,No explicit test reference
+FR-04,,No explicit test reference
+FR-05,,No explicit test reference
+FR-06,TS-04,Referenced
+FR-07,,No explicit test reference
+FR-08,TS-05,Referenced
+FR-09,TS-06; TS-07,Referenced
+FR-10,TS-08,Referenced
+FR-11,,No explicit test reference
+FR-12,TS-09,Referenced

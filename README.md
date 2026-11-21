@@ -27,6 +27,33 @@ The analysis demonstrates how business requirements can be carried through the s
 
 ---
 
+## Interactive Workflow & Requirements Analysis
+
+**[View Interactive Workflow Demo](https://ishgup22.github.io/Software-Engineering-Process-Analysis/)**
+
+I built this project to explore how software change requests move from an initial business need through requirements, development, testing, and release approval. The focus was on making requirements easier to follow, identifying gaps before testing, and keeping the approval process clear.
+
+### What I Built
+
+- Documented **12 business requirements and 12 functional requirements**, supported by process maps and 11 Agile user stories
+- Defined **20 acceptance criteria and 9 test scenarios** to evaluate expected system behaviour
+- Created an interactive prototype showing how a change request moves through engineering review, QA testing, and business approval
+- Used Python to check requirements-to-test traceability and flag missing coverage
+
+### Findings
+
+The traceability audit showed that **7 of 12 business requirements and 7 of 12 functional requirements (58.3%)** were explicitly referenced in the documented test scenarios.
+
+This highlighted where additional test scenarios would be needed before considering the proposed process fully covered.
+
+### Why It Matters
+
+The project shows how I approach a business problem beyond documenting requirements. I mapped the workflow, translated business needs into testable requirements, and checked whether the proposed testing covered what had been requested.
+
+*This is a simulated case study, not a production implementation.*
+
+---
+
 ## Business Problem
 
 The current-state workflow relies heavily on manual communication, email-based clarification, spreadsheet/backlog tracking, and repeated handoffs between stakeholders.

@@ -1,430 +1,147 @@
+
 # Software Engineering & Business Process Analysis
 
-A software engineering and business-process analysis case study demonstrating how business requirements can be translated into **BPMN process maps, Agile user stories, acceptance criteria, Jira-ready backlog items, Scrum delivery artifacts, and test scenarios**.
+### Business Requirements | BPMN | Agile/Scrum | Python | Process Improvement
 
-The project also applies foundational **Lean Six Sigma principles** to compare current and future workflows, identify process waste, clarify stakeholder responsibilities, and design process-improvement guidance.
+[**View Interactive Workflow Demo**](https://ishgup22.github.io/Software-Engineering-Process-Analysis/)
 
----
+A business analysis case study focused on improving how software change requests move from initial requirements through development, testing, and release approval.
 
-## Project Overview
+I analyzed a manual change-request workflow, identified gaps in requirements and handoffs, and designed a more structured process with clear ownership, traceable requirements, and defined release controls. I also built an interactive workflow prototype and used Python to check whether the documented test scenarios covered the business requirements.
 
-This project analyzes a software change request and delivery workflow from initial business request through engineering review, development, testing, business acceptance, and release readiness.
+## Project Highlights
 
-The objective was to model the current-state process, identify gaps and inefficiencies, and design a more structured future-state workflow.
+| Area | Work Completed |
+|---|---|
+| Requirements | 12 business and 12 functional requirements |
+| Agile Delivery | 11 user stories and 20 acceptance criteria |
+| Testing | 9 test scenarios with traceability checks |
+| Process Design | Current-state and future-state BPMN maps |
+| Analysis | Lean Six Sigma, gap analysis, and RACI |
+| Prototype | Interactive change-request workflow |
+| Key Finding | 58.3% explicit requirement-to-test coverage |
 
-The analysis demonstrates how business requirements can be carried through the software development lifecycle using:
-
-- Business and functional requirements
-- BPMN-style process mapping
-- Agile user stories
-- Acceptance criteria
-- Jira-ready backlog design
-- Scrum planning
-- Requirements traceability
-- Test scenarios
-- Lean Six Sigma process analysis
-- Roles and responsibilities mapping
+**Key finding:** The Python traceability audit found that only 7 of 12 business requirements and 7 of 12 functional requirements were explicitly referenced in the documented test scenarios. This identified coverage gaps that would need to be addressed before the proposed workflow could be considered fully tested.
 
 ---
 
-## Interactive Workflow & Requirements Analysis
+## The Business Problem
 
-**[View Interactive Workflow Demo](https://ishgup22.github.io/Software-Engineering-Process-Analysis/)**
+Software change requests can become difficult to manage when requirements are scattered across emails, ownership isn't clear, and testing expectations are defined late in the process.
 
-I built this project to explore how software change requests move from an initial business need through requirements, development, testing, and release approval. The focus was on making requirements easier to follow, identifying gaps before testing, and keeping the approval process clear.
+The current-state model highlighted four main issues:
 
-### What I Built
+- **Requirements gaps:** Incomplete requests led to repeated clarification between business and technical teams
+- **Limited visibility:** Manual tracking made it difficult to follow a request's status and ownership
+- **Disconnected testing:** Requirements were not consistently linked to acceptance criteria and test scenarios
+- **Unstructured approvals:** Release decisions relied on informal communication rather than defined readiness checks
 
-- Documented **12 business requirements and 12 functional requirements**, supported by process maps and 11 Agile user stories
-- Defined **20 acceptance criteria and 9 test scenarios** to evaluate expected system behaviour
-- Created an interactive prototype showing how a change request moves through engineering review, QA testing, and business approval
-- Used Python to check requirements-to-test traceability and flag missing coverage
+The goal was to design a workflow that addressed these gaps without adding unnecessary steps.
 
-### Findings
+## My Approach
 
-The traceability audit showed that **7 of 12 business requirements and 7 of 12 functional requirements (58.3%)** were explicitly referenced in the documented test scenarios.
+### 1. Map the Current Process
 
-This highlighted where additional test scenarios would be needed before considering the proposed process fully covered.
+I documented the existing workflow, from request submission through engineering review, development, QA, and release confirmation.
 
-### Why It Matters
+![Current-State Workflow](process-maps/current-state-bpmn.png)
 
-The project shows how I approach a business problem beyond documenting requirements. I mapped the workflow, translated business needs into testable requirements, and checked whether the proposed testing covered what had been requested.
+### 2. Design the Future-State Workflow
 
-*This is a simulated case study, not a production implementation.*
+I redesigned the process around standardized request intake, earlier requirement validation, defined responsibilities, centralized backlog tracking, and formal testing and approval checkpoints.
 
----
+![Future-State Workflow](process-maps/future-state-bpmn.png)
 
-## Business Problem
+The proposed changes are summarized below:
 
-The current-state workflow relies heavily on manual communication, email-based clarification, spreadsheet/backlog tracking, and repeated handoffs between stakeholders.
-
-Key process challenges include:
-
-- Incomplete or inconsistent requirements
-- Repeated clarification loops
-- Limited visibility into request status
-- Unclear ownership during handoffs
-- Manual backlog and prioritization activities
-- Testing expectations defined relatively late
-- Disconnected requirements and testing artifacts
-- Informal release confirmation
-
-The future-state workflow introduces standardized intake, requirement validation, defined ownership, Jira-based tracking, acceptance criteria, structured testing, Scrum planning, and formal release-readiness controls.
-
----
-
-## Current-State BPMN Process
-
-The current-state model represents a more manual software change-request workflow.
-
-Key characteristics include:
-
-- Email-based request submission
-- Manual requirements review
-- Clarification loops between business and engineering
-- Spreadsheet or manual backlog tracking
-- Manual prioritization
-- Testing expectations confirmed after development begins
-- Email-based release confirmation
-
-![Current-State Software Change Request Workflow](process-maps/current-state-bpmn.png)
-
----
-
-## Future-State BPMN Process
-
-The future-state model introduces a more structured workflow with defined controls and traceability.
-
-Key improvements include:
-
-- Standardized change-request intake
-- Required-information validation
-- Earlier documentation of requirements and acceptance needs
-- Structured engineering feasibility review
-- Jira-based backlog management
-- Backlog prioritization
-- Sprint planning
-- Testing against documented acceptance criteria
-- Formal business acceptance
-- Explicit release-readiness status
-
-![Future-State Software Change Request Workflow](process-maps/future-state-bpmn.png)
-
----
-
-## Business & Functional Requirements
-
-The project includes structured business and functional requirements using requirement IDs for traceability.
-
-Examples include:
-
-- **BR-01:** Standardized request intake
-- **BR-02:** Requirement completeness
-- **BR-03:** Clear ownership
-- **BR-05:** Requirements traceability
-- **BR-08:** Defined acceptance criteria
-- **BR-09:** Testing alignment
-- **BR-10:** Approval before release
-
-Functional requirements translate these needs into specific workflow capabilities such as validation rules, status tracking, engineering-review documentation, backlog creation, test-result recording, and invalid-transition controls.
-
-View the full requirements:
-
-- [`business-requirements.md`](requirements/business-requirements.md)
-- [`functional-requirements.md`](requirements/functional-requirements.md)
-
----
-
-## Agile User Stories & Acceptance Criteria
-
-Business requirements were translated into Agile user stories using the standard format:
-
-> **As a [user], I want [capability], so that [business value].**
-
-Examples include:
-
-- Submit a standardized change request
-- Validate request completeness
-- Track request status and ownership
-- Record engineering feasibility
-- Prioritize approved work
-- Define acceptance criteria
-- Trace requirements to testing
-- Record test results
-- Capture business acceptance
-
-Acceptance criteria were written using **Given / When / Then** format to define measurable conditions for completion.
-
-View:
-
-- [`user-stories.md`](agile/user-stories.md)
-- [`acceptance-criteria.md`](agile/acceptance-criteria.md)
-
----
-
-## Jira-Ready Backlog & Scrum Planning
-
-The project includes a Jira-ready backlog containing:
-
-- Issue keys
-- Story summaries
-- User stories
-- Priorities
-- Story points
-- Sprint assignments
-- Requirement references
-- Status
-
-The illustrative Scrum plan organizes backlog items across four delivery sprints:
-
-### Sprint 1
-
-Request intake and workflow visibility
-
-### Sprint 2
-
-Engineering review and delivery readiness
-
-### Sprint 3
-
-Testing, traceability, and business acceptance
-
-### Sprint 4
-
-Workflow controls and governance
-
-The Scrum plan also defines:
-
-- Product goal
-- Backlog prioritization approach
-- Sprint goals
-- Scrum roles
-- Scrum ceremonies
-- Definition of Ready
-- Definition of Done
-
-View:
-
-- [`jira-backlog.csv`](agile/jira-backlog.csv)
-- [`scrum-plan.md`](agile/scrum-plan.md)
-
----
-
-## Current-State vs Future-State Analysis
-
-The two workflows were compared across key process areas.
-
-| Process Area | Current State | Future State |
+| Process Area | Current State | Proposed Future State |
 |---|---|---|
-| Request Intake | Email-based submission | Standardized request intake |
-| Requirement Review | Manual review and clarification | Required-information validation |
-| Requirement Definition | Clarified throughout delivery | Requirements and acceptance needs documented earlier |
-| Engineering Review | Informal clarification loops | Structured feasibility review |
-| Work Tracking | Spreadsheet / manual backlog | Jira backlog |
-| Prioritization | Manual prioritization | Structured backlog prioritization |
-| Delivery Planning | No explicit planning stage | Sprint planning |
-| Testing Definition | Defined after development begins | Acceptance needs defined before development |
-| Testing | Generic test activity | Testing against acceptance criteria |
-| Business Approval | Review after testing | Formal business acceptance |
-| Release | Email confirmation | Explicit release-readiness status |
+| Request Intake | Email-based requests | Standardized intake and validation |
+| Requirements | Repeated clarification | Defined requirements before development |
+| Tracking | Manual spreadsheets | Jira-ready backlog with ownership |
+| Testing | Expectations defined late | Acceptance criteria and test traceability |
+| Approval | Informal confirmation | Documented business acceptance and release readiness |
 
-The full comparison is available here:
+[View detailed process comparison](analysis/current-vs-future-analysis.md)
 
-[`current-vs-future-analysis.md`](analysis/current-vs-future-analysis.md)
+### 3. Translate Business Needs Into Delivery Requirements
 
----
+I documented 12 business requirements and 12 functional requirements, then translated the workflow into 11 Agile user stories and 20 acceptance criteria.
 
-## Lean Six Sigma Process Analysis
+The artifacts cover request validation, status tracking, ownership, engineering feasibility, testing, and release approvals.
 
-Foundational Lean Six Sigma concepts were applied to identify process waste and design improvements.
+I also prepared a Jira-ready backlog with priorities, story points, requirement references, and an illustrative four-sprint delivery plan.
 
-### Lean Waste Identified
+**Project artifacts:**
+- [Business Requirements](requirements/business-requirements.md)
+- [Functional Requirements](requirements/functional-requirements.md)
+- [User Stories](agile/user-stories.md)
+- [Acceptance Criteria](agile/acceptance-criteria.md)
+- [Jira Backlog](agile/jira-backlog.csv)
+- [Scrum Delivery Plan](agile/scrum-plan.md)
 
-The current-state workflow contains examples of:
+### 4. Validate Requirements Against Testing
 
-- **Waiting** — clarification through manual email exchanges
-- **Defects / Rework** — incomplete requirements causing repeated clarification or redevelopment
-- **Overprocessing** — information repeated across email, meetings, and tracking tools
-- **Handoffs** — manual transfers between business, engineering, QA, and approvers
-- **Work in Progress** — items sitting in manually managed backlogs
-- **Underutilized Knowledge** — engineering or QA input introduced too late
+To check whether the documented testing covered the requirements, I used Python to audit explicit requirement references in the test scenarios.
 
-### Root Causes Analyzed
+The analysis found:
 
-Key root causes included:
+| Coverage Measure | Result |
+|---|---|
+| Business requirements referenced | 7 of 12 |
+| Functional requirements referenced | 7 of 12 |
+| Explicit coverage | 58.3% |
+| Documented test scenarios | 9 |
 
-- Unstructured request intake
-- Late definition of acceptance expectations
-- Fragmented tracking
-- Unclear process ownership
+The result exposed a gap between the requirements defined and the tests documented.
 
-### Designed Improvements
+This is an explicit-reference coverage measure, not a measure of test execution success or production software quality.
 
-The future-state workflow introduces:
+[View Test Scenarios](testing/test-scenarios.md)
 
-- Standardized intake
-- Early requirement validation
-- Earlier acceptance definition
-- Jira-based centralized tracking
-- Structured backlog prioritization
-- Sprint planning
-- Requirements-to-testing traceability
-- Formal release-readiness controls
+### 5. Analyze Process Waste and Ownership
 
-The complete Lean Six Sigma analysis is available here:
+I applied foundational Lean Six Sigma concepts to examine waiting time, rework, unnecessary handoffs, and fragmented tracking.
 
-[`lean-six-sigma-analysis.md`](analysis/lean-six-sigma-analysis.md)
+The analysis identified opportunities to move validation earlier, reduce avoidable clarification loops, and establish clearer decision points.
 
-> The Lean Six Sigma work in this project is applied at a foundational process-analysis level and does not represent formal Lean Six Sigma certification.
+A RACI-style responsibility matrix defines ownership across business requesters, analysts, product owners, engineering, QA, and approvers.
+
+- [Lean Six Sigma Analysis](analysis/lean-six-sigma-analysis.md)
+- [Roles & Responsibilities](analysis/roles-responsibilities.md)
 
 ---
 
-## Roles & Responsibilities
+## Interactive Workflow Prototype
 
-The future-state workflow clarifies responsibility across:
+[**Open the Interactive Demo**](https://ishgup22.github.io/Software-Engineering-Process-Analysis/)
 
-- Business Requester
-- Business Analyst
-- Product Owner
-- Engineering
-- Development
-- QA
-- Business Approver
+I built an interactive prototype to demonstrate how a change request progresses through requirements review, engineering, QA testing, business acceptance, and release readiness.
 
-A simplified RACI-style matrix is used to clarify ownership across major process stages.
+The prototype complements the process maps and written requirements by making the proposed workflow easier to explore.
 
-View:
-
-[`roles-responsibilities.md`](analysis/roles-responsibilities.md)
+It is a demonstration of the designed process, not a deployed enterprise workflow system.
 
 ---
 
-## Requirements Traceability & Testing
+## Tools & Methods
 
-The project demonstrates traceability across:
+**Business Analysis:** Business and Functional Requirements, Gap Analysis, Stakeholder Responsibilities, RACI, Requirements Traceability
 
-**Business Requirement → Functional Requirement → User Story → Acceptance Criteria → Test Scenario**
+**Process Improvement:** BPMN, Current-State/Future-State Mapping, Root Cause Analysis, Lean Six Sigma Concepts
 
-Example:
+**Agile Delivery:** Scrum, User Stories, Acceptance Criteria, Jira-Ready Backlog, Sprint Planning
 
-```text
-BR-08
-Defined Acceptance Criteria
-        ↓
-FR-08
-System supports acceptance criteria
-        ↓
-US-06
-Define Acceptance Criteria
-        ↓
-AC-06.1 / AC-06.2
-Readiness conditions
-        ↓
-TS-05
-Prevent Development Without Acceptance Criteria
-```
-
-Test scenarios cover:
-
-- Successful request submission
-- Missing required information
-- Requirement clarification
-- Engineering feasibility review
-- Development-readiness controls
-- Successful testing
-- Failed-test rework
-- Business acceptance
-- Release-readiness controls
-
-View:
-
-[`test-scenarios.md`](testing/test-scenarios.md)
+**Technical:** Python, HTML, JavaScript, Requirements Coverage Analysis, Test Scenario Design
 
 ---
 
-## Key Deliverables
+## Project Outcome
 
-This repository contains:
+The project produced a structured future-state workflow supported by documented requirements, process maps, Agile delivery artifacts, and test scenarios.
 
-- Business requirements
-- Functional requirements
-- Current-state BPMN process map
-- Future-state BPMN process map
-- Agile user stories
-- Acceptance criteria
-- Jira-ready backlog
-- Scrum delivery plan
-- Current vs future workflow analysis
-- Lean Six Sigma process analysis
-- Roles and responsibilities matrix
-- Requirements-based test scenarios
+The most important result was identifying that **58.3% of business and functional requirements had explicit references in the documented tests**. That finding provided a concrete starting point for improving test coverage and release readiness.
 
----
+The proposed workflow also established clearer ownership and earlier validation checkpoints to address issues identified in the current-state analysis.
 
-## Skills & Concepts Demonstrated
-
-- Business Requirements Analysis
-- Functional Requirements
-- BPMN Process Mapping
-- Current-State / Future-State Analysis
-- Agile / Scrum
-- Jira Backlog Design
-- User Stories
-- Acceptance Criteria
-- Requirements Traceability
-- Gap Analysis
-- Lean Six Sigma
-- Root Cause Analysis
-- Process Improvement
-- Software Testing
-- RACI / Role Clarification
-- SDLC Analysis
-
----
-
-## Repository Structure
-
-```text
-Software-Engineering-Process-Analysis/
-│
-├── requirements/
-│   ├── business-requirements.md
-│   └── functional-requirements.md
-│
-├── process-maps/
-│   ├── README.md
-│   ├── current-state-bpmn.png
-│   └── future-state-bpmn.png
-│
-├── agile/
-│   ├── user-stories.md
-│   ├── acceptance-criteria.md
-│   ├── jira-backlog.csv
-│   └── scrum-plan.md
-│
-├── analysis/
-│   ├── current-vs-future-analysis.md
-│   ├── lean-six-sigma-analysis.md
-│   └── roles-responsibilities.md
-│
-├── testing/
-│   └── test-scenarios.md
-│
-└── README.md
-```
-
----
-
-## Project Scope & Limitations
-
-This repository is a **software engineering and business-process analysis case study** designed to demonstrate requirements analysis, BPMN modelling, Agile delivery artifacts, testing traceability, and process-improvement methods.
-
-The proposed future-state improvements represent **designed process recommendations**, not measured production outcomes.
-
-No claims are made regarding production implementation, measured cycle-time reduction, cost savings, or operational performance improvements.
-
----
-
-## Project Status
-
-✅ Complete
+**Project scope:** This is a simulated business analysis case study. The future-state workflow represents a design recommendation, not a production implementation. No measured cycle-time reductions, operational savings, or production improvements are claimed.
